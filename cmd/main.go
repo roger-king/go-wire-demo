@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"os"
 
 	server "github.com/roger-king/go-wire-demo/pkg"
@@ -31,6 +32,6 @@ func init() {
 
 func main() {
 	server, _ := server.New()
-	port := viper.Get("PORT")
-	log.Fatal(server.Listen(port))
+	port := viper.GetString("PORT")
+	log.Fatal(server.Listen(fmt.Sprintf(":%s", port)))
 }

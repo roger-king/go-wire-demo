@@ -6,7 +6,7 @@
 package pkg
 
 import (
-	"github.com/gofiber/fiber"
+	"github.com/gofiber/fiber/v2"
 	"github.com/google/wire"
 	"github.com/roger-king/go-wire-demo/pkg/config"
 	"github.com/roger-king/go-wire-demo/pkg/handlers"

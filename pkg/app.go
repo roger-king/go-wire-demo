@@ -1,8 +1,8 @@
 package pkg
 
 import (
-	"github.com/gofiber/cors"
-	"github.com/gofiber/fiber"
+	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/fiber/v2/middleware/cors"
 	"github.com/google/wire"
 	"github.com/roger-king/go-wire-demo/pkg/config"
 	"github.com/roger-king/go-wire-demo/pkg/handlers"
@@ -17,9 +17,7 @@ var AppSet = wire.NewSet(NewApp, repositories.Set, handlers.Set, config.Set)
 func NewApp(status *handlers.StatusHandler) *fiber.App {
 	app := fiber.New()
 
-	app.Use(cors.New(cors.Config{
-		AllowOrigins: []string{"*"},
-	}))
+	app.Use(cors.New())
 
 	api := app.Group("/api")
 	// Server status endpoint - sanity check that the server is running

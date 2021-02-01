@@ -1,7 +1,7 @@
 package handlers
 
 import (
-	"github.com/gofiber/fiber"
+	"github.com/gofiber/fiber/v2"
 	"github.com/roger-king/go-wire-demo/pkg/repositories"
 )
 
@@ -18,7 +18,6 @@ func NewStatusHandler(r repositories.StatusRepositoryIface) *StatusHandler {
 }
 
 // Get - fetches the latest status of your application server
-func (s *StatusHandler) Get(c *fiber.Ctx) {
-	c.JSON(s.Repository.GetApplicationStatus())
-	return
+func (s *StatusHandler) Get(c *fiber.Ctx) error {
+	return c.JSON(s.Repository.GetApplicationStatus())
 }
