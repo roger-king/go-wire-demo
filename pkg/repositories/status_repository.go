@@ -1,8 +1,8 @@
 package repositories
 
 import (
-	"github.com/roger-king/gh-template/pkg/config"
-	"github.com/roger-king/gh-template/pkg/entities"
+	"github.com/roger-king/go-wire-demo/pkg/config"
+	"github.com/roger-king/go-wire-demo/pkg/entities"
 )
 
 // StatusRepository -

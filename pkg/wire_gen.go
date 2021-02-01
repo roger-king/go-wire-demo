@@ -8,9 +8,9 @@ package pkg
 import (
 	"github.com/gofiber/fiber"
 	"github.com/google/wire"
-	"github.com/roger-king/gh-template/pkg/config"
-	"github.com/roger-king/gh-template/pkg/handlers"
-	"github.com/roger-king/gh-template/pkg/repositories"
+	"github.com/roger-king/go-wire-demo/pkg/config"
+	"github.com/roger-king/go-wire-demo/pkg/handlers"
+	"github.com/roger-king/go-wire-demo/pkg/repositories"
 )
 
 // Injectors from server.go:

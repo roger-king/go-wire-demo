@@ -2,7 +2,7 @@ package handlers
 
 import (
 	"github.com/gofiber/fiber"
-	"github.com/roger-king/gh-template/pkg/repositories"
+	"github.com/roger-king/go-wire-demo/pkg/repositories"
 )
 
 // StatusHandler - model to represent your status handler

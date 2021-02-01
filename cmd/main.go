@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	server "github.com/roger-king/gh-template/pkg"
+	server "github.com/roger-king/go-wire-demo/pkg"
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/viper"
 )
